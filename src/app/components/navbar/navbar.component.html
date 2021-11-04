@@ -1,1 +1,42 @@
-<p>navbar works!</p>
+<mat-toolbar color="primary" class="myNav mat-elevation-z9">
+    <span>
+        <a href="/" class="navbar-brand nav-link navTexts">
+            <img src="https://images2.imgbox.com/b0/89/AGh0itMW_o.png"
+                alt="Price Tracker" width="100" height="100" class="logoStyle">
+        </a>
+    </span>
+  
+    <div class="spacer"></div>
+    <div>
+        <form action="" method="get">
+            <input class="searchRight" type="search" name="" id="" placeholder="Search for products"><button class="bg-danger searchLeft" type="submit">SEARCH</button>
+        </form>
+    </div>
+    
+    <div class="nav-head"><a mat-button routerLink="home"><h6 id="navTexts">Home</h6></a></div>
+    <div class="nav-head"><a mat-button routerLink="products"><h6 id="navTexts">Products</h6></a></div>
+    <div class="nav-head"><a mat-button routerLink="aboutus"><h6 id="navTexts">About Us</h6></a></div>
+    <div class="nav-head">
+        <a mat-button routerLink="account">
+            <h6 id="navTexts">Account <i class="fas fa-chevron-circle-down"></i></h6>
+        </a>
+        <!-- <ul>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <h6>Account <i class="fas fa-chevron-circle-down"></i></h6>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Update Profile</a>
+                  <a class="dropdown-item" href="#">Favorites</a>
+                  <a class="dropdown-item" href="#">Expired</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item bg-danger" href="#">Log Out</a>
+                </div>
+            </li>
+        </ul> -->
+    </div>
+    <div class="nav-head bg-danger"><a mat-button routerLink="logout"><h6 id="navText">Log Out</h6></a></div>
+    
+    <div class="nav-head bg-primary"><a mat-button routerLink="login"><h6 id="navText">Login</h6></a></div>
+    <div class="nav-head bg-primary me-5"><a mat-raised-button color="accent" routerLink="register"><h6 id="navText">Register</h6></a></div>
+  </mat-toolbar>
