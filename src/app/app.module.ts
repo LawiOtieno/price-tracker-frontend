@@ -15,6 +15,7 @@ import { TimePipe } from './pipes/time.pipe';
 import { TotalPricePipe } from './pipes/total-price.pipe';
 import { HighlightDirective } from './directives/highlight.directive';
 import { FavouriteDirective } from './directives/favourite.directive';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FavouriteDirective } from './directives/favourite.directive';
     TimePipe,
     TotalPricePipe,
     HighlightDirective,
-    FavouriteDirective
+    FavouriteDirective,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
