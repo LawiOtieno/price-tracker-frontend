@@ -11,6 +11,10 @@ import { ProductsComponent } from './components/products/products.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { SearchComponent } from './components/search/search.component';
+import { TimePipe } from './pipes/time.pipe';
+import { TotalPricePipe } from './pipes/total-price.pipe';
+import { HighlightDirective } from './directives/highlight.directive';
+import { FavouriteDirective } from './directives/favourite.directive';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { SearchComponent } from './components/search/search.component';
     ProductsComponent,
     AboutUsComponent,
     ContactUsComponent,
-    SearchComponent
+    SearchComponent,
+    TimePipe,
+    TotalPricePipe,
+    HighlightDirective,
+    FavouriteDirective
   ],
   imports: [
     BrowserModule,
