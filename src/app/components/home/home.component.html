@@ -1,4 +1,55 @@
 
 <div class="container">
-    <p>home works!</p>
+    <div class="row">
+        <div class="card" *ngFor="let product of allProducts; let i = index">
+            <a href="{{product.imgSrc}}" target="_blank">
+            <img class="card-img-top" src={{product.productUrl}} alt="Card image cap">
+            <div class="card-body">
+              <p class="card-title">Product: {{product.title}}</p>
+              <p class="card-text">Offer Price: {{product.currentPrice}}</p>
+              <p class="card-text"> Discount: {{product.discount}}</p>
+              <p class="card-text"><small class="text-muted">{{product. datePosted | time}}</small></p>
+            </div> 
+            </a>
+          </div>
+    </div>
+    <!-- <div class="row">
+        <div class= "header">Black Friday Discounts</div>
+        <div class="card" *ngFor="let product of allProducts; let i = index">
+            <a href="{{product.productUrl}}" target="_blank">
+            <img class="card-img-top" src={{product.imgSrc}} alt="Card image cap">
+            <div class="card-body">
+              <p class="card-title">Product: {{product.title}}</p>
+              <p class="card-text">Offer Price: {{product.currentPrice}}</p>
+              <p class="card-text"> Discount: {{product.discount}}</p>
+              <p class="card-text"><small class="text-muted">{{product. datePosted | time}}</small></p>
+            </div> 
+            </a>
+          </div>
+          <div class="card" *ngFor="let product of allProducts; let i = index">
+            <a href="{{product.productUrl}}" target="_blank">
+                <img class="card-img-top" src={{product.imgSrc}} alt="Card image cap">
+            <div class="card-body">
+              <p class="card-title">Product: {{product.title}}</p>
+              <p class="card-text">Offer Price: {{product.currentPrice}}</p>
+              <p class="card-text"> Discount: {{product.discount}}</p>
+              <p class="card-text"><small class="text-muted">{{product. datePosted | time}}</small></p>
+            </div> 
+            </a>
+          </div>
+    </div> -->
+    <!-- <div class="row">
+        <div class= "header">More Offers</div>
+        <div class="card" *ngFor="let product of allProducts; let i = index">
+            <a href="{{product.productUrl}}" target="_blank">
+                <img class="card-img-top" src={{product.imgSrc}} alt="Card image cap">
+            <div class="card-body">
+              <p class="card-title">Product: {{product.title}}</p>
+              <p class="card-text">Offer Price: {{product.currentPrice}}</p>
+              <p class="card-text"> Discount: {{product.discount}}</p>
+              <p class="card-text"><small class="text-muted">{{product. datePosted | time}}</small></p>
+            </div> 
+            </a>
+          </div>
+    </div> -->
 </div>
