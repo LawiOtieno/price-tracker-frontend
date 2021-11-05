@@ -6,10 +6,13 @@
             <a href="{{product.imgSrc}}" target="_blank">
             <img class="card-img-top" src={{product.productUrl}} alt="Card image cap">
             <div class="card-body">
-              <p class="card-title">Product: {{product.title}}</p>
+              <p class="card-title"><u>Product:</u> {{product.title}}</p>
               <p class="card-text">Offer Price: {{product.currentPrice}}</p>
               <p class="card-text"> Discount: <span class="text-danger">{{product.discount}}</span></p>
               <p class="card-text"><small class="text-muted">{{product. datePosted | time}}</small></p>
+              
+              <button class="btn btn-sm btn-outline-info text-danger">Visit Site</button>
+              <br>
             </div> 
             </a>
           </div>
