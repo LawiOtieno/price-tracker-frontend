@@ -1,13 +1,14 @@
 
 <div class="container">
+  <br><br>
     <div class="row">
-        <div class="card" *ngFor="let product of allProducts; let i = index">
+        <div class="card mx-1 my-1" *ngFor="let product of allProducts; let i = index">
             <a href="{{product.imgSrc}}" target="_blank">
             <img class="card-img-top" src={{product.productUrl}} alt="Card image cap">
             <div class="card-body">
               <p class="card-title">Product: {{product.title}}</p>
               <p class="card-text">Offer Price: {{product.currentPrice}}</p>
-              <p class="card-text"> Discount: {{product.discount}}</p>
+              <p class="card-text"> Discount: <span class="text-danger">{{product.discount}}</span></p>
               <p class="card-text"><small class="text-muted">{{product. datePosted | time}}</small></p>
             </div> 
             </a>
@@ -52,4 +53,5 @@
             </a>
           </div>
     </div> -->
+    <br><br>
 </div>
