@@ -15,6 +15,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 We are all Fullstack developers from **Moringa School**, under ACCESS SPONSORSHIP.
 
+## Django API Backend
+Find the Django + scrapy api backend repo [here](https://github.com/KenMwaura1/price_tracker_backend)
+
 
 ## Technologies Used
 * Angular
